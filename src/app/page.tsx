@@ -16,24 +16,26 @@ export default function Home() {
           <p className="text-xl text-[#00DEFF]">Software Engineer</p>
         </header>
 
-        {/* About Me */}
+         {/* Passions */}
         <section id="about" className="w-full max-w-5xl mb-12">
           <h2 className="text-2xl font-semibold mb-4 text-white drop-shadow-[0_1px_1px_rgba(0,255,208,0.8)]">
-            About Me
+            CV
           </h2>
           <p className="text-lg text-[#E6F3FF]">
-            I'm a passionate developer with experience in building web applications using modern technologies.
-            I love solving complex problems and creating user-friendly interfaces.
+          Graduated in Computer Science Technology from Maringá University, with a Post graduation degree in Mobile Application Development from Americas Union University, and subsequently a Master of Business Administration (MBA) in Cybersecurity
+           from Americas Union University. Currently pursuing a Master's in Software Engineering (Software Engineering) from the Universidad Europea del Atlántico, in Santander, Spain. 
+           Currently working as a Software Engineer and DevOps for the Foundation for Support in Education, Research, and Scientific and Technological Development of the Federal Technological University of Paraná (UTFPR), 
+           also has over 70 IT and Leadership course certificates.
           </p>
         </section>
 
         {/* Skills */}
         <section id="skills" className="w-full max-w-5xl mb-12">
           <h2 className="text-2xl font-semibold mb-4 text-white drop-shadow-[0_1px_1px_rgba(0,255,208,0.8)]">
-            Skills
+          Passions
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {["JavaScript", "React", "Node.js", "Python", "HTML/CSS", "Git", "MongoDB", "AWS"].map((skill) => (
+            {["God", "Family", "IT", "Coding", "Calisthenics", "Psychology", "Mind", "Spirit"].map((skill) => (
               <div key={skill} className="bg-[#3BFFB930] rounded-lg p-2 text-center text-white">
                 {skill}
               </div>
