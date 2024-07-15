@@ -31,3 +31,18 @@ body {
     text-wrap: balance;
   }
 }
+/* src/app/globals.css */
+
+.ant-checkbox-checked-custom .ant-checkbox-inner {
+  background-color: #000017 !important;
+  border-color: #00DEFF !important;
+}
+
+.ant-checkbox-checked-custom .ant-checkbox-inner::after {
+  border-color: #00DEFF !important;
+}
+
+.ant-checkbox-custom .ant-checkbox-inner {
+  background-color: #000017 !important;
+  border-color: #00DEFF !important;
+}

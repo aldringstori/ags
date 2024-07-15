@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Navbar } from '@/components/Navbar';
+import { Navbar } from '@/components/navbar';
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         {/* Header */}
         <header className="w-full max-w-5xl mb-12">
           <h1 className="text-4xl font-bold mb-2 text-white drop-shadow-[0_2px_2px_rgba(0,255,208,0.8)]">
-            Aldrin Gustavo Stori, M.Sc
+            Aldrin Gustavo Stori, MSc
           </h1>
           <p className="text-xl text-[#00DEFF]">Software Engineer</p>
         </header>
@@ -34,7 +34,7 @@ export default function Home() {
           <p className="text-lg text-[#E6F3FF]">
           Master's degree in Software Engineering from Universidad Europea del Atlántico, (Santander, Spain). Has two MBA's one in Cybersecurity and in Big Data. 
           Has two Postgraduate degrees one in Mobile Application Development and other in Software Engineering, and an undergraduate degree in Systems Analysis and Development. 
-          Currently works as an AI and Software Engineer and has obtained over 50 certifications in IT and Leadership.
+          Currently works as an AI and Software Engineer and has obtained over 50 certifications in IT and Leadership. Now is pursuing a doctorate in IT.
           </p>
         </section>
         
