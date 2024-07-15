@@ -70,20 +70,6 @@ export default function Hobbies() {
               <span className="ml-2 text-[#E6F3FF]">Economics </span>
             </li>
           </ul>
-
-          <h3 className="text-xl font-semibold mb-3 mt-6 text-white">Professional Achievements</h3>
-          <ul className="space-y-2">
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">Over 50 certifications in IT and Leadership</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">Currently working as an AI and Software Engineer</span>
-            </li>
-          </ul>
         </section>
 
         {/* Footer */}
