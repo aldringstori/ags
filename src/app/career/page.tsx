@@ -36,7 +36,7 @@ export default function CareerPage() {
             <li className="flex items-center">
               <Checkbox checked disabled className="ant-checkbox-checked-custom">
               </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">Master's in Software Engineering - Universidad Europea del Atlántico</span>
+              <span className="ml-2 text-[#E6F3FF]">Master&apos;s in Software Engineering - Universidad Europea del Atlántico</span>
             </li>
             <li className="flex items-center">
               <Checkbox checked disabled className="ant-checkbox-checked-custom">
@@ -61,7 +61,7 @@ export default function CareerPage() {
             <li className="flex items-center">
               <Checkbox checked disabled className="ant-checkbox-checked-custom">
               </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">Bachelor's in Systems Analysis and Development</span>
+              <span className="ml-2 text-[#E6F3FF]">Bachelor&apos;s in Systems Analysis and Development</span>
             </li>
             <li className="flex items-center">
               <Checkbox className="ant-checkbox-custom" />

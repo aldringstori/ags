@@ -32,7 +32,7 @@ export default function Home() {
             Educational
           </h2>
           <p className="text-lg text-[#E6F3FF]">
-          Master's degree in Software Engineering from Universidad Europea del Atlántico, (Santander, Spain). Has two MBA's one in Cybersecurity and in Big Data. 
+          Master&apos;s degree in Software Engineering from Universidad Europea del Atlántico, (Santander, Spain). Has two MBA&apos;s one in Cybersecurity and in Big Data. 
           Has two Postgraduate degrees one in Mobile Application Development and other in Software Engineering, and an undergraduate degree in Systems Analysis and Development. 
           Currently works as an AI and Software Engineer and has obtained over 50 certifications in IT and Leadership. Now is pursuing a doctorate in IT.
           </p>
