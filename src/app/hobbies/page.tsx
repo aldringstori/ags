@@ -24,52 +24,6 @@ export default function Hobbies() {
             Text
           </p>
 
-          {/* Checkbox List */}
-          <h3 className="text-xl font-semibold mb-3 text-white">Educational Achievements</h3>
-          <ul className="space-y-2">
-            <li className="flex items-center">
-              <Checkbox className="ant-checkbox-custom" />
-              <span className="ml-2 text-[#E6F3FF]">PhD (Future Goal) AI/Cyberpsychology </span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">Master's in Software Engineering - Universidad Europea del Atlántico</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">MBA in Cybersecurity</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">MBA in Big Data</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">Postgraduate in Mobile Application Development</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">Postgraduate in Software Engineering</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">Bachelor's in Systems Analysis and Development</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox className="ant-checkbox-custom" />
-              <span className="ml-2 text-[#E6F3FF]">Marketing/Entrepreunership </span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox className="ant-checkbox-custom" />
-              <span className="ml-2 text-[#E6F3FF]">Economics </span>
-            </li>
-          </ul>
         </section>
 
         {/* Footer */}
