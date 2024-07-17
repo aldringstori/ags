@@ -10,8 +10,14 @@ const navItems = {
   '/career': {
     name: 'career',
   },
+  '/books': {
+    name: 'books',
+  },
   '/hobbies': {
     name: 'hobbies',
+  },
+  '/educational': {
+    name: 'educational',
   },
 };
 

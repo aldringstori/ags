@@ -24,6 +24,11 @@ export default function CareerPage() {
             Experienced AI and Software Engineer with a strong academic background and numerous professional certifications.
             Started in IT as Tech computer hardware and software, then help desk, then internship as software developer typescript and then  IT Analyst and then Software developer, software engineer and AI Engineer.
             4 Years of experience as IT and 2 as SwE/Developer
+            1,5 Years as tester
+            1,5 as help desk 
+            1 IT support
+            1 IT Analyst
+            6 Typescript developer 
           </p>
 
           {/* Checkbox List */}
