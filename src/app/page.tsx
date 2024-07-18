@@ -41,7 +41,7 @@ export default function Home() {
             Educational
           </h2>
           <p className="text-lg text-[#E6F3FF]">
-          Master&apos;s degree in Software Engineering from Universidad Europea del Atlántico, (Santander, Spain). Has two MBA&apos;s one in Cybersecurity and in Big Data. 
+          Master&apos;s degree in Software Engineering from Universidad Europea del Atlántico, (Santander, Spain). Has two MBA&apos;s one in Cybersecurity and one in Big Data. 
           Has two Postgraduate degrees one in Mobile Application Development and other in Software Engineering, and an undergraduate degree in Systems Analysis and Development. 
           Currently works as an AI and Software Engineer and has obtained over 50 certifications in IT and Leadership. Now is pursuing a doctorate in IT.
           </p>
@@ -70,7 +70,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               { title: "Portal do candidato", description: "A brief description of Project 1" },
-              { title: "Project 2", description: "A brief description of Project 2" },
+              { title: "Youtube Summarizer", description: "A brief description of Project 2" },
               { title: "Project 3", description: "A brief description of Project 3" },
               { title: "Project 4", description: "A brief description of Project 4" },
             ].map((project, index) => (
