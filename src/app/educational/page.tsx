@@ -1,6 +1,7 @@
-import { Navbar } from '@/components/navbar';
+
 import { Checkbox } from 'antd';
 import { CheckOutlined } from '@ant-design/icons';
+import { Navbar } from '@/components/navbar-menu'; 
 
 export default function Educational() {
   return (
@@ -11,7 +12,7 @@ export default function Educational() {
       <main className="flex-grow flex flex-col items-center justify-between p-8">
         <header className="w-full max-w-5xl mb-12">
           <h1 className="text-4xl font-bold mb-2 text-white drop-shadow-[0_2px_2px_rgba(0,255,208,0.8)]">
-            Education history and papers
+            Education
           </h1>
         </header>
         
@@ -19,47 +20,63 @@ export default function Educational() {
          {/* Projects */}
          <section id="about" className="w-full max-w-5xl mb-12">
           <h2 className="text-2xl font-semibold mb-4 text-white drop-shadow-[0_1px_1px_rgba(0,255,208,0.8)]">
-            Portal do candidato 
+            Educational 
           </h2>
           <p className="text-lg text-[#E6F3FF]">
-            As a Technical Leader, i led the development team and implementation of the digital registration and examination system for the Universidade Tecnológica Federal do Paraná's (UTFPR) 
-            Entrance Exam since 2023. Successfully streamlined the registration process for over 3 years, across 114 courses, enabling a smooth, error-free registration experience for applicants. 
-            Innovated by integrating a fee exemption feature, quota reservation system, and reasonable adaptations module for candidates with specific needs, significantly enhancing the inclusivity and efficiency of the admissions process.
-            The system was so well that UTFPR used for public exams to select candidates to be federal employees of the university.
-            System designed for candidate registration for UTFPR and FUNTEFPR selective processes. University entrance exams and public competitions.
-
-            Over $4 million was collected and more than 150,000 unique registered candidates with over 1 million accesses.
-
-            The software is still being used by UTFPR and FUNTEFPR.
+            Graduated in Computer Science Technology from Maringá University, with a 
+            Post graduation degree in Mobile Application Development from Americas Union University, and subsequently a Master of Business Administration (MBA) 
+            in Cybersecurity from Americas Union University. Currently pursuing a Master's in Software Engineering (Software Engineering) from the Universidad Europea del Atlántico,
+            in Santander, Spain. Currently working as a Software Engineer and DevOps for the Foundation for Support in Education, Research, and Scientific and Technological Development of the 
+            Federal Technological University of Paraná (UTFPR), also has over 70 IT and Leadership course certificates.
           </p>
+          <span className="block my-6"></span>
 
-          <h2 className="text-2xl font-semibold mb-4 text-white drop-shadow-[0_1px_1px_rgba(0,255,208,0.8)]">
-            FUNTEFPR AI
-          </h2>
-          <p className="text-lg text-[#E6F3FF]">
-            AI developed with RAG to increase collaborators performance and quicker assistance to clients. Instead of having  to manually search over 5 terabytes of documents the AI makes a auto digest in the Drive documents
-            and stores it on a vector database, so when the user needs that data the AI searches for the user, also gives IT support and works as Knowledge base. Which decreased 90% of the call time, 
-
-            <h6>Text and voice search</h6> 
-            User assistance
-            Client assistance
-            Knowledgebase
-            IT Support
-          </p>
-
-          <h2 className="text-2xl font-semibold mb-4 text-white drop-shadow-[0_1px_1px_rgba(0,255,208,0.8)]">
-            Portal do colaborador 
-          </h2>
-          <p className="text-lg text-[#E6F3FF]">
-            As a Technical Leader, I led the development team and implementation of the digital registration and examination system for the Universidade Tecnológica Federal do Paraná's (UTFPR) 
-            Entrance Exam since 2023. Successfully streamlined the registration process for over 3 years, across 114 courses, enabling a smooth, error-free registration experience for applicants.\n\nInnovated by integrating a 
-            fee exemption feature, quota reservation system, and reasonable adaptations module for candidates with specific needs, significantly enhancing the inclusivity and efficiency of the admissions process.\n\n
-            The system was so well received that UTFPR used it for public exams to select candidates to be federal employees of the university.\n\nSystem designed for candidate registration for UTFPR and FUNTEFPR selective processes,
-            including university entrance exams and public competitions.\n\n
-
-            Over $4 million was collected and more than 150,000 unique registered candidates with over 1 million accesses.\n\n
-            The software is still being used by UTFPR and FUNTEFPR.
-          </p>
+          {/* Checkbox List */}
+          <h3 className="text-xl font-semibold mb-3 text-white">Educational Achievements and Objectives</h3>
+          <ul className="space-y-2">
+            <li className="flex items-center">
+              <Checkbox className="ant-checkbox-custom" />
+              <span className="ml-2 text-[#E6F3FF]">PhD (Future Goal) AI/Cyberpsychology </span>
+            </li>
+            <li className="flex items-center">
+              <Checkbox checked disabled className="ant-checkbox-checked-custom">
+              </Checkbox>
+              <span className="ml-2 text-[#E6F3FF]">Master&apos;s in Software Engineering - Universidad Europea del Atlántico</span>
+            </li>
+            <li className="flex items-center">
+              <Checkbox checked disabled className="ant-checkbox-checked-custom">
+              </Checkbox>
+              <span className="ml-2 text-[#E6F3FF]">MBA in Cybersecurity</span>
+            </li>
+            <li className="flex items-center">
+              <Checkbox checked disabled className="ant-checkbox-checked-custom">
+              </Checkbox>
+              <span className="ml-2 text-[#E6F3FF]">MBA in Big Data</span>
+            </li>
+            <li className="flex items-center">
+              <Checkbox checked disabled className="ant-checkbox-checked-custom">
+              </Checkbox>
+              <span className="ml-2 text-[#E6F3FF]">Postgraduate in Mobile Application Development</span>
+            </li>
+            <li className="flex items-center">
+              <Checkbox checked disabled className="ant-checkbox-checked-custom">
+              </Checkbox>
+              <span className="ml-2 text-[#E6F3FF]">Postgraduate in Software Engineering</span>
+            </li>
+            <li className="flex items-center">
+              <Checkbox checked disabled className="ant-checkbox-checked-custom">
+              </Checkbox>
+              <span className="ml-2 text-[#E6F3FF]">Bachelor&apos;s in Systems Analysis and Development</span>
+            </li>
+            <li className="flex items-center">
+              <Checkbox className="ant-checkbox-custom" />
+              <span className="ml-2 text-[#E6F3FF]">Marketing/Entrepreunership </span>
+            </li>
+            <li className="flex items-center">
+              <Checkbox className="ant-checkbox-custom" />
+              <span className="ml-2 text-[#E6F3FF]">Economics </span>
+            </li>
+          </ul>
         </section>
 
 

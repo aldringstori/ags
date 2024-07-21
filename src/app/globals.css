@@ -33,6 +33,23 @@ body {
 }
 /* src/app/globals.css */
 
+/* globals.css */
+html, body, #__next {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000017; /* Make sure the background color covers the whole body */
+}
+
+/* Apply the font settings globally */
+body {
+  font-family: var(--font-dm-sans), sans-serif;
+}
+
 .ant-checkbox-checked-custom .ant-checkbox-inner {
   background-color: #000017 !important;
   border-color: #00DEFF !important;
@@ -45,4 +62,13 @@ body {
 .ant-checkbox-custom .ant-checkbox-inner {
   background-color: #000017 !important;
   border-color: #00DEFF !important;
+}
+
+.link-hover-effect {
+  color: #00DEFF;
+  transition: color 0.3s;
+}
+
+.link-hover-effect:hover {
+  color: #2E62FF;
 }

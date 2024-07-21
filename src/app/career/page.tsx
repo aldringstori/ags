@@ -1,12 +1,13 @@
-import { Navbar } from '@/components/navbar';
+
 import { Checkbox } from 'antd';
 import { CheckOutlined } from '@ant-design/icons';
+import { Navbar } from '@/components/navbar-menu'; 
 
-export default function CareerPage() {
+export default function Career() {
   return (
     <div className="flex flex-col min-h-screen bg-[#000017] text-white font-sans">
       <header className="w-full max-w-5xl mx-auto px-8 pt-8">
-        <Navbar />
+      <Navbar />
       </header>
       <main className="flex-grow flex flex-col items-center justify-between p-8">
         <header className="w-full max-w-5xl mb-12">
@@ -29,54 +30,9 @@ export default function CareerPage() {
             1 IT support
             1 IT Analyst
             6 Typescript developer 
-          </p>
 
-          {/* Checkbox List */}
-          <h3 className="text-xl font-semibold mb-3 text-white">Educational Achievements</h3>
-          <ul className="space-y-2">
-            <li className="flex items-center">
-              <Checkbox className="ant-checkbox-custom" />
-              <span className="ml-2 text-[#E6F3FF]">PhD (Future Goal) AI/Cyberpsychology </span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">Master&apos;s in Software Engineering - Universidad Europea del Atlántico</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">MBA in Cybersecurity</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">MBA in Big Data</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">Postgraduate in Mobile Application Development</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">Postgraduate in Software Engineering</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox checked disabled className="ant-checkbox-checked-custom">
-              </Checkbox>
-              <span className="ml-2 text-[#E6F3FF]">Bachelor&apos;s in Systems Analysis and Development</span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox className="ant-checkbox-custom" />
-              <span className="ml-2 text-[#E6F3FF]">Marketing/Entrepreunership </span>
-            </li>
-            <li className="flex items-center">
-              <Checkbox className="ant-checkbox-custom" />
-              <span className="ml-2 text-[#E6F3FF]">Economics </span>
-            </li>
-          </ul>
+            For more details on each project i worked on click here.
+          </p>
 
           <h3 className="text-xl font-semibold mb-3 mt-6 text-white">Professional Achievements</h3>
           <ul className="space-y-2">

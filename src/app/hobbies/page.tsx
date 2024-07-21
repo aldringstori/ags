@@ -1,6 +1,7 @@
-import { Navbar } from '@/components/navbar';
+
 import { Checkbox } from 'antd';
 import { CheckOutlined } from '@ant-design/icons';
+import { Navbar } from '@/components/navbar-menu'; 
 
 export default function Hobbies() {
   return (

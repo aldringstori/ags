@@ -1,4 +1,7 @@
 {
     "editor.fontFamily": "Franklin Gothic Book",
-    "editor.fontSize": 22
+    "editor.fontSize": 18,
+    "editor.cursorStyle": "underline",
+    "debug.console.fontSize": 20,
+    "editor.inlayHints.fontSize": 0
 }
