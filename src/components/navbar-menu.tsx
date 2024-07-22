@@ -100,15 +100,19 @@ const navItems = {
   },
   '/educational': {
     name: 'educational',
-    subItems: [
-      { href: '/educational/papers', name: 'Papers' },
-    ],
   },
   '/projects': {
     name: 'projects',
     subItems: [
       { href: '/projects/open-source', name: 'Open Source' },
-      { href: '/projects/closed-source', name: 'Closed Source' },
+    ],
+  },
+  '/demos': {
+    name: 'demos',
+    subItems: [
+      { href: '/demos/aicompanion', name: 'AI Companion' },
+      { href: '/personal/calisthenics', name: 'Free youtube summarizer' },
+      { href: '/personal/mentors', name: 'Wisdom Collector' },
     ],
   },
   '/personal': {

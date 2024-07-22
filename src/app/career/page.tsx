@@ -12,7 +12,7 @@ export default function Career() {
       <main className="flex-grow flex flex-col items-center justify-between p-8">
         <header className="w-full max-w-5xl mb-12">
           <h1 className="text-4xl font-bold mb-2 text-white drop-shadow-[0_2px_2px_rgba(0,255,208,0.8)]">
-            Future/Career
+            Career and Future
           </h1>
         </header>
         

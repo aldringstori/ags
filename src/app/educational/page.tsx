@@ -12,7 +12,7 @@ export default function Educational() {
       <main className="flex-grow flex flex-col items-center justify-between p-8">
         <header className="w-full max-w-5xl mb-12">
           <h1 className="text-4xl font-bold mb-2 text-white drop-shadow-[0_2px_2px_rgba(0,255,208,0.8)]">
-            Education
+            Education and papers
           </h1>
         </header>
         
@@ -77,6 +77,14 @@ export default function Educational() {
               <span className="ml-2 text-[#E6F3FF]">Economics </span>
             </li>
           </ul>
+          <span className="block my-6"></span>
+
+          <h2 className="text-2xl font-semibold mb-4 text-white drop-shadow-[0_1px_1px_rgba(0,255,208,0.8)]">
+            Papers 
+          </h2>
+          <p className="text-lg text-[#E6F3FF]">
+            1.
+          </p>
         </section>
 
 

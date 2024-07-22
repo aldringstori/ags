@@ -25,7 +25,7 @@ export default function Home() {
         {/* Passions */}
         <section id="about" className="w-full max-w-5xl mb-12">
           <h2 className="text-2xl font-semibold mb-4 text-white drop-shadow-[0_1px_1px_rgba(0,255,208,0.8)]">Passions</h2>
-          <p className="text-lg text-[#E6F3FF]">Passionate about Learning and improving everyday.</p>
+          <p className="text-lg text-[#E6F3FF]">Passionate about Learning and improving everyday. Continuous learning and adaptation.</p>
         </section>
 
         {/* Educational */}

@@ -11,13 +11,38 @@ export default function Projects() {
       <main className="flex-grow flex flex-col items-center justify-between p-8">
         <header className="w-full max-w-5xl mb-12">
           <h1 className="text-4xl font-bold mb-2 text-white drop-shadow-[0_2px_2px_rgba(0,255,208,0.8)]">
-            Open Source
+            All projects
           </h1>
         </header>
         
 
          {/* Projects */}
          <section id="about" className="w-full max-w-5xl mb-12">
+          <p>More than 20 software projects</p>
+          <span className="block my-6"></span>
+
+         <ul className="list-disc pl-6 text-[#E6F3FF]">
+            <li>Free Youtube Summarizer</li>
+            <li>Wisdom Collector</li>
+            <li>Preta Fina Acessórios</li>
+            <li>Workspace Manager</li>
+            <li>Portal do Candidato</li>
+            <li>Exam ScoreSystem</li>
+            <li>Faul</li>
+            <li>FunTechy</li>
+            <li>GFUN Legacy Transition</li>
+            <li>PonderaScore</li>
+            <li>Portal do Colaborador</li>
+            <li>Extracion</li>
+            <li>FUNTEF NextGen Portal</li>
+            <li>GFUN</li>
+            <li>Post Grad Software</li>
+            <li>Exam Allocator</li>
+            <li>Avaya Toolbar</li>
+            <li>FUNTEF AI</li>
+        </ul>
+        <span className="block my-6"></span>
+
           <h2 className="text-2xl font-semibold mb-4 text-white drop-shadow-[0_1px_1px_rgba(0,255,208,0.8)]">
             Portal do candidato 
           </h2>
