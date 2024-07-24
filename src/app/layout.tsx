@@ -27,7 +27,7 @@ export default function RootLayout({
           <Navbar />
         </div>
         <TracingBeam> 
-          <div className="mt-[-20px]"> {/* Decrease margin to move the content up */}
+          <div className="mt-[-20px]"> {/* Adjust margin here */}
             {children}
           </div>
         </TracingBeam>

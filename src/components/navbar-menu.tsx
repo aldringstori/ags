@@ -75,7 +75,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)}
-      className="relative flex justify-center space-x-4 px-8 py-12 z-20" // Increase padding here
+      className="relative flex justify-center space-x-4 px-8 py-12 z-20"
     >
       {children}
     </nav>

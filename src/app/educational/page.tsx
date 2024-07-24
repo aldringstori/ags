@@ -8,7 +8,6 @@ export default function Educational() {
   return (
     <div className="flex flex-col min-h-screen bg-[#000017] text-white font-sans">
       <header className="w-full max-w-5xl mx-auto px-8 pt-8">
-        <Navbar />
       </header>
       <main className="flex-grow flex flex-col items-center justify-between p-8">
         <header className="w-full max-w-5xl mb-12">
@@ -78,14 +77,6 @@ export default function Educational() {
               <span className="ml-2 text-[#E6F3FF]">Economics </span>
             </li>
           </ul>
-          <span className="block my-6"></span>
-
-          <h2 className="text-2xl font-semibold mb-4 text-white drop-shadow-[0_1px_1px_rgba(0,255,208,0.8)]">
-            Papers 
-          </h2>
-          <p className="text-lg text-[#E6F3FF]">
-            1.
-          </p>
         </section>
 
 
