@@ -1,6 +1,5 @@
 import { Checkbox } from 'antd';
 import { CheckOutlined } from '@ant-design/icons';
-import { Navbar } from '@/components/navbar-menu'; 
 
 export default function Projects() {
   return (
@@ -10,17 +9,17 @@ export default function Projects() {
       <main className="flex-grow flex flex-col items-center justify-between p-8">
         <header className="w-full max-w-5xl mb-12">
           <h1 className="text-4xl font-bold mb-2 text-white drop-shadow-[0_2px_2px_rgba(0,255,208,0.8)]">
-            All projects
+            Work Projects
           </h1>
         </header>
 
-         {/* Projects */}
-         <section id="about" className="w-full max-w-5xl mb-12">
+        {/* Projects */}
+        <section id="about" className="w-full max-w-5xl mb-12">
           <p>More than 20 software projects</p>
           <span className="block my-6"></span>
 
           <ul className="list-disc pl-6 text-[#E6F3FF]">
-          <li>Portal do Candidato</li>
+            <li>Portal do Candidato</li>
             <li>Free Youtube Summarizer</li>
             <li>Wisdom Collector</li>
             <li>Preta Fina Acessórios</li>
@@ -38,6 +37,7 @@ export default function Projects() {
             <li>Exam Allocator</li>
             <li>Avaya Toolbar</li>
             <li>FUNTEF AI</li>
+            <li>FDrive</li>
           </ul>
           <span className="block my-6"></span>
 
@@ -61,7 +61,7 @@ export default function Projects() {
             FUNTEFPR AI
           </h2>
           <p className="text-lg text-[#E6F3FF] mb-6">
-            AI developed with RAG to increase collaborators performance and quicker assistance to clients. Instead of having  to manually search over 5 terabytes of documents the AI makes a auto digest in the Drive documents
+            AI developed with RAG to increase collaborators performance and quicker assistance to clients. Instead of having to manually search over 5 terabytes of documents the AI makes a auto digest in the Drive documents
             and stores it on a vector database, so when the user needs that data the AI searches for the user, also gives IT support and works as Knowledge base. Which decreased 90% of the call time.
           </p>
           <ul className="list-disc pl-6 text-[#E6F3FF] mb-6">

@@ -33,15 +33,15 @@ export const TracingBeam = ({
   const y1 = useSpring(
     useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
     {
-      stiffness: 500,
-      damping: 90,
+      stiffness: 100,
+      damping: 30,
     }
   );
   const y2 = useSpring(
     useTransform(scrollYProgress, [0, 1], [50, svgHeight - 200]),
     {
-      stiffness: 500,
-      damping: 90,
+      stiffness: 100,
+      damping: 30,
     }
   );
 
@@ -62,18 +62,20 @@ export const TracingBeam = ({
                 ? "none"
                 : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
           }}
-          className="ml-[27px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
+          className="ml-[27px] h-4 w-4 rounded-full border border-neutral-200 shadow-sm flex items-center justify-center"
         >
           <motion.div
             transition={{
-              duration: 0.2,
-              delay: 0.5,
+              duration: 0.5,
+              repeat: Infinity,
+              repeatType: "mirror",
             }}
             animate={{
               backgroundColor:
                 scrollYProgress.get() > 0 ? "white" : "var(--emerald-500)",
               borderColor:
                 scrollYProgress.get() > 0 ? "white" : "var(--emerald-600)",
+              opacity: [1, 0],
             }}
             className="h-2 w-2  rounded-full border border-neutral-300 bg-white"
           />
@@ -91,7 +93,7 @@ export const TracingBeam = ({
             stroke="#9091A0"
             strokeOpacity="0.16"
             transition={{
-              duration: 10,
+              duration: 30, // Slower tracing beam
             }}
           ></motion.path>
           <motion.path
@@ -101,7 +103,7 @@ export const TracingBeam = ({
             strokeWidth="1.25"
             className="motion-reduce:hidden"
             transition={{
-              duration: 10,
+              duration: 30, // Slower tracing beam
             }}
           ></motion.path>
           <defs>

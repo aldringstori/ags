@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { DM_Sans } from 'next/font/google'
-import { TracingBeam } from "@/components/tracing-beam"; // Import TracingBeam component
-import "./globals.css";
-import { Checkbox } from 'antd';
-import { CheckOutlined } from '@ant-design/icons';
+import { DM_Sans } from 'next/font/google';
+import { TracingBeam } from "@/components/tracing-beam"; 
 import { Navbar } from '@/components/navbar-menu'; 
-
+import "./globals.css";
 
 const dmSans = DM_Sans({ 
   subsets: ['latin'],
@@ -26,8 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.variable} font-sans`}>
-        <TracingBeam> {/* Wrap children with TracingBeam for the effect */}
-          {children}
+        <div className="relative z-10">
+          <Navbar />
+        </div>
+        <TracingBeam> 
+          <div className="mt-[-20px]"> {/* Decrease margin to move the content up */}
+            {children}
+          </div>
         </TracingBeam>
       </body>
     </html>

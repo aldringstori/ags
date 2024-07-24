@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 
 const transition = {
   type: "spring",
@@ -76,7 +75,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)}
-      className="relative bg-[#000017] shadow-input flex justify-start space-x-4 px-8 py-6"
+      className="relative flex justify-center space-x-4 px-8 py-12 z-20" // Increase padding here
     >
       {children}
     </nav>
@@ -95,24 +94,20 @@ const navItems = {
   '/': {
     name: 'home',
   },
+  '/projects': {
+    name: 'projects',
+    subItems: [
+      { href: '/projects/open-source', name: 'Open Source' },
+      { href: '/projects/closed-source', name: 'Closed Source' },
+    ],
+  },
   '/career': {
     name: 'career',
   },
   '/educational': {
     name: 'educational',
-  },
-  '/projects': {
-    name: 'projects',
     subItems: [
-      { href: '/projects/open-source', name: 'Open Source' },
-    ],
-  },
-  '/demos': {
-    name: 'demos',
-    subItems: [
-      { href: '/demos/aicompanion', name: 'AI Companion' },
-      { href: '/personal/calisthenics', name: 'Free youtube summarizer' },
-      { href: '/personal/mentors', name: 'Wisdom Collector' },
+      { href: '/educational/papers', name: 'Papers' },
     ],
   },
   '/personal': {
@@ -130,7 +125,7 @@ const navItems = {
 export function Navbar() {
   const [active, setActive] = React.useState<string | null>(null);
   return (
-    <aside className="-ml-[8px] mb-16 tracking-tight">
+    <aside className="mb-16 tracking-tight">
       <div className="lg:sticky lg:top-20">
         <Menu setActive={setActive}>
           {Object.entries(navItems).map(([path, { name, subItems }]) => (

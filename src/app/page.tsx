@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-[#000017] text-white">
       <header className="w-full max-w-5xl mx-auto px-8 pt-8">
-        <Navbar />
       </header>
       <main className="flex-grow flex flex-col items-center justify-between p-8">
         <header className="w-full max-w-5xl mb-12">

@@ -1,3 +1,4 @@
+"use client";
 
 import { Checkbox } from 'antd';
 import { CheckOutlined } from '@ant-design/icons';
