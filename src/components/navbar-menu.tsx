@@ -12,6 +12,43 @@ const transition = {
   restSpeed: 0.001,
 };
 
+type NavItem = {
+  name: string;
+  subItems?: { href: string; name: string }[];
+};
+
+const navItems: Record<string, NavItem> = {
+  '/': {
+    name: 'home',
+  },
+  '/projects': {
+    name: 'projects',
+    subItems: [
+      { href: '/projects', name: 'work' },
+      { href: '/projects/open-source', name: 'open source' },
+    ],
+  },
+  '/career': {
+    name: 'career',
+  },
+  '/educational': {
+    name: 'educational',
+    subItems: [
+      { href: '/educational/papers', name: 'Papers' },
+    ],
+  },
+  '/personal': {
+    name: 'personal',
+    subItems: [
+      { href: '/personal/hobbies', name: 'Hobbies' },
+      { href: '/personal/calisthenics', name: 'Calisthenics' },
+      { href: '/personal/mentors', name: 'Mentors' },
+      { href: '/personal/books', name: 'Books' },
+      { href: '/personal/psychology', name: 'Psychology' },
+    ],
+  },
+};
+
 export const MenuItem = ({
   setActive,
   active,
@@ -91,45 +128,6 @@ export const HoveredLink = ({ children, ...rest }: any) => {
       {children}
     </Link>
   );
-};
-
-const navItems = {
-  '/': {
-    name: 'home',
-  },
-  '/projects': {
-    name: 'projects',
-    subItems: [
-      { href: '/projects', name: 'work' },
-      { href: '/projects/open-source', name: 'open source' },
-    ],
-  },
-  '/career': {
-    name: 'career',
-  },
-  '/educational': {
-    name: 'educational',
-    subItems: [
-      { href: '/educational/papers', name: 'Papers' },
-    ],
-  },
-  '/personal': {
-    name: 'personal',
-    subItems: [
-      { href: '/personal/hobbies', name: 'hobbies' },
-      { href: '/personal/calisthenics', name: 'calisthenics' },
-      { href: '/personal/mentors', name: 'mentors' },
-      { href: '/personal/books', name: 'books' },
-      { href: '/personal/psychology', name: 'psychology' },
-    ],
-  },
-  '/demos': {
-    name: 'demos',
-    subItems: [
-      { href: '/demos/summarizer', name: 'youtube summarizer' },
-      { href: '/demos/aicompanion', name: 'ai companion' },
-    ],
-  },
 };
 
 export function Navbar() {
