@@ -48,13 +48,16 @@ export const MenuItem = ({
               <motion.div layout className="w-max h-full p-4 text-[#E6F3FF]">
                 {children}
                 {subItems && (
-                  <div className="flex flex-col mt-4 space-y-2">
-                    {subItems.map((subItem) => (
-                      <HoveredLink key={subItem.href} href={subItem.href}>
-                        {subItem.name}
-                      </HoveredLink>
-                    ))}
-                  </div>
+                  <>
+                    <div className="border-t border-white my-2"></div> {/* Thin white line */}
+                    <div className="flex flex-col mt-4 space-y-2">
+                      {subItems.map((subItem) => (
+                        <HoveredLink key={subItem.href} href={subItem.href}>
+                          {subItem.name}
+                        </HoveredLink>
+                      ))}
+                    </div>
+                  </>
                 )}
               </motion.div>
             </motion.div>
@@ -97,8 +100,8 @@ const navItems = {
   '/projects': {
     name: 'projects',
     subItems: [
-      { href: '/projects/open-source', name: 'Open Source' },
-      { href: '/projects/closed-source', name: 'Closed Source' },
+      { href: '/projects', name: 'work' },
+      { href: '/projects/open-source', name: 'open source' },
     ],
   },
   '/career': {

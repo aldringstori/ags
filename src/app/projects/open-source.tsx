@@ -1,7 +1,7 @@
 import { Checkbox } from 'antd';
 import { CheckOutlined } from '@ant-design/icons';
 
-export default function Projects() {
+export default function OpenSource() {
   return (
     <div className="flex flex-col min-h-screen bg-[#000017] text-white font-sans">
       <header className="w-full max-w-5xl mx-auto px-8 pt-8">
@@ -9,7 +9,7 @@ export default function Projects() {
       <main className="flex-grow flex flex-col items-center justify-between p-8">
         <header className="w-full max-w-5xl mb-12">
           <h1 className="text-4xl font-bold mb-2 text-white drop-shadow-[0_2px_2px_rgba(0,255,208,0.8)]">
-            Work Projects
+            Open source projects
           </h1>
         </header>
 
@@ -21,6 +21,7 @@ export default function Projects() {
           <ul className="list-disc pl-6 text-[#E6F3FF]">
             <li>Portal do Candidato</li>
             <li>Free Youtube Summarizer</li>
+            <li>FUNTEF AI</li>
             <li>Wisdom Collector</li>
             <li>Preta Fina Acessórios</li>
             <li>Workspace Manager</li>
@@ -67,14 +68,18 @@ export default function Projects() {
             FUNTEFPR AI
           </h2>
           <p className="text-lg text-[#E6F3FF] mb-6">
-            AI developed with RAG to increase collaborators performance and quicker assistance to clients. Instead of having to manually search over 5 terabytes of documents the AI makes a auto digest in the Drive documents
-            and stores it on a vector database, so when the user needs that data the AI searches for the user, also gives IT support and works as Knowledge base. Which decreased 90% of the call time.
+          Private AI was developed using Ollama as the LLM and fine-tuned with Retrieval Augmented Generation to increase collaborators' performance and provide quicker assistance to clients. 
+          Instead of manually searching through over 10 terabytes of documents, the AI creates an auto digest of company documents and stores it in a vector database. When a collaborator needs data, 
+          the AI searches for the user, provides IT support, and serves as a knowledge base. This system has decreased response time to clients by 90%, regardless of the communication channel—email, phone, 
+          chat, or others. Additionally, the AI maintains technical IT documents to support collaborators, accessing a knowledge base to prevent human errors, misinformation, or the dissemination of incorrect information. 
+          The client support system, limited to public data, helps clients quickly buy products or get support for educational products.
           </p>
           <ul className="list-disc pl-6 text-[#E6F3FF] mb-6">
             <li>Text and voice search</li> 
-            <li>User assistance</li>
             <li>Client assistance</li>
             <li>Knowledgebase</li>
+            <li>Software support</li>
+            <li>Product Offers</li>
             <li>IT Support</li>
           </ul>
 
