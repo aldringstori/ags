@@ -116,11 +116,18 @@ const navItems = {
   '/personal': {
     name: 'personal',
     subItems: [
-      { href: '/personal/hobbies', name: 'Hobbies' },
-      { href: '/personal/calisthenics', name: 'Calisthenics' },
-      { href: '/personal/mentors', name: 'Mentors' },
-      { href: '/personal/books', name: 'Books' },
-      { href: '/personal/psychology', name: 'Psychology' },
+      { href: '/personal/hobbies', name: 'hobbies' },
+      { href: '/personal/calisthenics', name: 'calisthenics' },
+      { href: '/personal/mentors', name: 'mentors' },
+      { href: '/personal/books', name: 'books' },
+      { href: '/personal/psychology', name: 'psychology' },
+    ],
+  },
+  '/demos': {
+    name: 'demos',
+    subItems: [
+      { href: '/demos/summarizer', name: 'youtube summarizer' },
+      { href: '/demos/aicompanion', name: 'ai companion' },
     ],
   },
 };
