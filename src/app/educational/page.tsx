@@ -30,7 +30,7 @@ export default function Educational() {
             Federal Technological University of Paraná (UTFPR), also has over 70 IT and Leadership course certificates.
           </p>
           <span className="block my-6"></span>
-
+          <br></br>
           {/* Checkbox List */}
           <h3 className="text-xl font-semibold mb-3 text-white">Educational Achievements and Objectives</h3>
           <ul className="space-y-2">
@@ -77,6 +77,18 @@ export default function Educational() {
               <span className="ml-2 text-[#E6F3FF]">Economics </span>
             </li>
           </ul>
+          </section>
+          <section>
+          <h2 className="text-2xl font-semibold mb-4 text-white drop-shadow-[0_1px_1px_rgba(0,255,208,0.8)]">
+            Academic Papers 
+          </h2>
+          <p className="text-lg text-[#E6F3FF]">
+            Graduated in Computer Science Technology from Maringá University, with a 
+            Post graduation degree in Mobile Application Development from Americas Union University, and subsequently a Master of Business Administration (MBA) 
+            in Cybersecurity from Americas Union University. Currently pursuing a Master's in Software Engineering (Software Engineering) from the Universidad Europea del Atlántico,
+            in Santander, Spain. Currently working as a Software Engineer and DevOps for the Foundation for Support in Education, Research, and Scientific and Technological Development of the 
+            Federal Technological University of Paraná (UTFPR), also has over 70 IT and Leadership course certificates.
+          </p>
         </section>
 
 

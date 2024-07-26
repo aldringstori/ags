@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -32,9 +34,6 @@ body {
   }
 }
 
-/* src/app/globals.css */
-
-/* globals.css */
 html, body, #__next {
   height: 100%;
   width: 100%;
@@ -43,12 +42,8 @@ html, body, #__next {
 }
 
 body {
-  background: #000017; /* Make sure the background color covers the whole body */
-}
-
-/* Apply the font settings globally */
-body {
   font-family: var(--font-dm-sans), sans-serif;
+  background: #000017; /* Make sure the background color covers the whole body */
 }
 
 .ant-checkbox-checked-custom .ant-checkbox-inner {
@@ -81,4 +76,144 @@ nav {
   align-items: center;
   padding-top: 60px; /* Increase padding to move the navbar down */
   z-index: 20;
+}
+
+p {
+  color: #E6F3FF; /* Light text color */
+  text-align: justify; /* Justify text */
+  margin-bottom: 16px; /* Space between paragraphs */
+}
+
+#extension-container {
+  background-color: #faf5f5;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#header-container {
+  height: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.extension-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.extension-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px;
+  margin: 0;
+}
+
+#summary-btn {
+  background-color: #2E62FF;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 2px 0 rgba(109, 53, 253, 0.09);
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 106px;
+  height: 36px;
+  padding: 0;
+  justify-content: center;
+}
+
+#transcription-btn {
+  background-color: #2E62FF;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 2px 0 rgba(109, 53, 253, 0.09);
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 120px;
+  height: 36px;
+  padding: 0;
+  justify-content: center;
+}
+
+#copy-btn {
+  background-color: #2E62FF;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 2px 0 rgba(109, 53, 253, 0.09);
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  width: 76px;
+  height: 36px;
+  padding: 0;
+  justify-content: center;
+}
+
+#summary-btn img, #transcription-btn img, #copy-btn img {
+  margin-right: 8px;
+}
+
+#summary-btn:hover, #transcription-btn:hover, #copy-btn:hover {
+  background-color: #00FFD0;
+}
+
+#summary-btn img, #transcription-btn img, #copy-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+#summary-container {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+
+.loading-icon {
+  animation: spin 1s linear infinite;
+  color: #fff;
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
 }

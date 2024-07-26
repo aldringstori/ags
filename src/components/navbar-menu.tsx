@@ -20,31 +20,38 @@ type NavItem = {
 const navItems: Record<string, NavItem> = {
   '/': {
     name: 'home',
+    subItems: [],
   },
   '/projects': {
     name: 'projects',
     subItems: [
-      { href: '/projects', name: 'work' },
+      { href: '/projects/work', name: 'work' },
       { href: '/projects/open-source', name: 'open source' },
     ],
   },
   '/career': {
     name: 'career',
+    subItems: [],
   },
   '/educational': {
     name: 'educational',
-    subItems: [
-      { href: '/educational/papers', name: 'Papers' },
-    ],
   },
   '/personal': {
     name: 'personal',
     subItems: [
-      { href: '/personal/hobbies', name: 'Hobbies' },
-      { href: '/personal/calisthenics', name: 'Calisthenics' },
-      { href: '/personal/mentors', name: 'Mentors' },
-      { href: '/personal/books', name: 'Books' },
-      { href: '/personal/psychology', name: 'Psychology' },
+      { href: '/personal/calisthenics', name: 'calisthenics' },
+      { href: '/personal/mentors', name: 'mentors' },
+      { href: '/personal/books', name: 'books' },
+      { href: '/personal/psychology', name: 'psychology' },
+    ],
+  },
+  '/demos': {
+    name: 'demos',
+    subItems: [
+      { href: '/demos/summarizer', name: 'youtube summarizer' },
+      { href: '/demos/joi', name: 'joi ai companion' },
+      { href: '/demos/mentors', name: 'public transport cv' },
+      { href: '/demos/books', name: 'free summarizer chrome extension' },
     ],
   },
 };
@@ -53,48 +60,44 @@ export const MenuItem = ({
   setActive,
   active,
   item,
-  children,
+  href,
   subItems,
 }: {
   setActive: (item: string) => void;
   active: string | null;
   item: string;
-  children?: React.ReactNode;
+  href: string;
   subItems?: { href: string; name: string }[];
 }) => {
   return (
     <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-[#E6F3FF] hover:opacity-[0.9]"
+        className="cursor-pointer text-white hover:text-[#2E62FF] transition-colors duration-300"
       >
-        {item}
+        <Link href={href}>{item}</Link>
       </motion.p>
-      {active === item && (
+      {active === item && subItems && subItems.length > 0 && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={transition}
         >
-          <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
+          <div className="absolute top-full left-1/2 transform -translate-x-1/2">
             <motion.div
               transition={transition}
               layoutId="active"
               className="bg-[#000017] backdrop-blur-sm rounded-2xl overflow-hidden border border-[#00DEFF] shadow-xl"
             >
               <motion.div layout className="w-max h-full p-4 text-[#E6F3FF]">
-                {children}
                 {subItems && (
-                  <>
-                    <div className="border-t border-white my-2"></div> {/* Thin white line */}
-                    <div className="flex flex-col mt-4 space-y-2">
-                      {subItems.map((subItem) => (
-                        <HoveredLink key={subItem.href} href={subItem.href}>
-                          {subItem.name}
-                        </HoveredLink>
-                      ))}
-                    </div>
-                  </>
+                  <div className="flex flex-col space-y-2">
+                    {subItems.map((subItem) => (
+                      <HoveredLink key={subItem.href} href={subItem.href}>
+                        {subItem.name}
+                      </HoveredLink>
+                    ))}
+                  </div>
                 )}
               </motion.div>
             </motion.div>
@@ -124,7 +127,7 @@ export const Menu = ({
 
 export const HoveredLink = ({ children, ...rest }: any) => {
   return (
-    <Link {...rest} className="text-[#E6F3FF] hover:text-[#00DEFF]">
+    <Link {...rest} className="text-white hover:text-[#2E62FF] transition-colors duration-300">
       {children}
     </Link>
   );
@@ -142,10 +145,9 @@ export function Navbar() {
               setActive={setActive}
               active={active}
               item={name}
+              href={path}
               subItems={subItems}
-            >
-              <HoveredLink href={path}>{name}</HoveredLink>
-            </MenuItem>
+            />
           ))}
         </Menu>
       </div>

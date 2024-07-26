@@ -1,7 +1,7 @@
 import { Checkbox } from 'antd';
 import { CheckOutlined } from '@ant-design/icons';
 
-export default function Projects() {
+export default function Work() {
   return (
     <div className="flex flex-col min-h-screen bg-[#000017] text-white font-sans">
       <header className="w-full max-w-5xl mx-auto px-8 pt-8">
