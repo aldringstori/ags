@@ -36,15 +36,6 @@ const navItems: Record<string, NavItem> = {
   '/educational': {
     name: 'educational',
   },
-  '/personal': {
-    name: 'personal',
-    subItems: [
-      { href: '/personal/calisthenics', name: 'calisthenics' },
-      { href: '/personal/mentors', name: 'mentors' },
-      { href: '/personal/books', name: 'books' },
-      { href: '/personal/psychology', name: 'psychology' },
-    ],
-  },
   '/demos': {
     name: 'demos',
     subItems: [
@@ -52,6 +43,15 @@ const navItems: Record<string, NavItem> = {
       { href: '/demos/joi', name: 'joi ai companion' },
       { href: '/demos/mentors', name: 'public transport cv' },
       { href: '/demos/books', name: 'free summarizer chrome extension' },
+    ],
+  },
+  '/personal': {
+    name: 'personal',
+    subItems: [
+      { href: '/personal/calisthenics', name: 'calisthenics' },
+      { href: '/personal/mentors', name: 'mentors' },
+      { href: '/personal/books', name: 'books' },
+      { href: '/personal/psychology', name: 'psychology' },
     ],
   },
 };
