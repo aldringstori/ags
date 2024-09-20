@@ -17,7 +17,7 @@ export default function Home() {
           <div>
             <a href="https://www.linkedin.com/in/aldringstori" className="text-[#00DEFF] hover:text-[#2E62FF] transition-colors duration-300">LinkedIn</a>
             <span className="mx-2">|</span>
-            <a href="https://github.com/A-GustavoStori" className="text-[#00DEFF] hover:text-[#2E62FF] transition-colors duration-300">GitHub</a>
+            <a href="https://github.com/aldringstori" className="text-[#00DEFF] hover:text-[#2E62FF] transition-colors duration-300">GitHub</a>
             <span className="mx-2">|</span>
             <a href="https://leetcode.com/u/aldrinstori/" className="text-[#00DEFF] hover:text-[#2E62FF] transition-colors duration-300">LeetCode</a>
           </div>
