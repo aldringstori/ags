@@ -19,7 +19,7 @@ export default function Home() {
             <span className="mx-2">|</span>
             <a href="https://github.com/aldringstori" className="text-[#00DEFF] hover:text-[#2E62FF] transition-colors duration-300">GitHub</a>
             <span className="mx-2">|</span>
-            <a href="https://leetcode.com/u/aldrinstori/" className="text-[#00DEFF] hover:text-[#2E62FF] transition-colors duration-300">LeetCode</a>
+            <a href="https://leetcode.com/u/aldringstori/" className="text-[#00DEFF] hover:text-[#2E62FF] transition-colors duration-300">LeetCode</a>
           </div>
         </header>
 
